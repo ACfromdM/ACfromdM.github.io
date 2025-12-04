@@ -64,10 +64,6 @@
     </div>
   </section>
 
-<!-- About Me -->
-<section id="about" class="three"><div class="container"><header><h2>About Me</h2></header><a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a><p>I'm Anton Caushaj, a Computer Science student at York University and an Albanian-Canadian. Raised in Toronto, I’ve always been someone who blends curiosity with discipline, whether in tech, soccer, or life. My journey from Forest Hill to the Lassonde School of Engineering has been shaped by a love for learning, a respect for diversity, and a drive to improve every day. 
-	I believe success is built on heart, not just talent. 
-	I’m passionate about using technology to connect people, solve real-world problems, and leave a lasting impact.</p></div></section>
 
 <!-- Portfolio -->
 <section id="portfolio" class="two">
@@ -175,6 +171,69 @@
     margin-bottom: 0;
     font-size: 0.95em;
     color: #333;
+  }
+</style>
+
+<!-- About Me -->
+<section id="about" class="three">
+  <div class="container">
+    <header>
+      <h2>About Me</h2>
+    </header>
+    <div class="about-wrapper">
+      <div class="about-image">
+        <img src="images/pic08.jpg" alt="Anton Caushaj portrait" />
+      </div>
+      <div class="about-text">
+        <p>
+          I'm <strong>Anton Caushaj</strong>, a Computer Science student at York University and proud Albanian-Canadian. Raised in Toronto, I’ve always blended curiosity with discipline—whether in tech, soccer, or life.
+        </p>
+        <p>
+          My journey from Forest Hill to the Lassonde School of Engineering has been shaped by a deep love for learning, a respect for diversity, and a drive to improve every day. I believe success is built on heart, not just talent.
+        </p>
+        <p>
+          I’m passionate about using technology to connect people, solve real-world problems, and leave a lasting impact. Whether through cloud systems, ethical computing, or community-driven innovation, I aim to build digital bridges that empower others.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+    margin-top: 2em;
+  }
+
+  .about-image {
+    flex: 1 1 300px;
+    max-width: 400px;
+  }
+
+  .about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .about-text {
+    flex: 2 1 400px;
+    font-size: 1em;
+    line-height: 1.8em;
+    color: #444;
+  }
+
+  .about-text strong {
+    color: #007acc;
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-wrapper {
+      flex-direction: column;
+    }
   }
 </style>
 
@@ -374,6 +433,7 @@
 	</body>
 
 </html>
+
 
 
 
