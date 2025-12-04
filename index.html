@@ -174,34 +174,50 @@
       <h2>Skills</h2>
     </header>
     <div class="skills-grid">
-      <ul>
-        <li><strong>Languages:</strong> Python, Java, SQL, JavaScript</li>
-        <li><strong>Frameworks & Libraries:</strong> Scikit-learn, Swing, Web3J</li>
-        <li><strong>Data & Analytics:</strong> Tableau, Apache Spark, Excel, Power BI</li>
-        <li><strong>Cloud & DevOps:</strong> AWS, Google Cloud, Docker</li>
-        <li><strong>Databases:</strong> MySQL, PostgreSQL</li>
-        <li><strong>Tools:</strong> Git, REST APIs, UML, ETL Pipelines</li>
-        <li><strong>Certifications:</strong> AWS Cloud Practitioner, AWS Machine Learning Engineer, Microsoft 365 & Azure Fundamentals</li>
-        <li><strong>Languages Spoken:</strong> English, French, Albanian, Spanish</li>
-      </ul>
+      <div class="skill-item"><strong>Languages:</strong> Python, Java, SQL, JavaScript</div>
+      <div class="skill-item"><strong>Frameworks & Libraries:</strong> Scikit-learn, Swing, Web3J</div>
+      <div class="skill-item"><strong>Data & Analytics:</strong> Tableau, Apache Spark, Excel, Power BI</div>
+      <div class="skill-item"><strong>Cloud & DevOps:</strong> AWS, Google Cloud, Docker</div>
+      <div class="skill-item"><strong>Databases:</strong> MySQL, PostgreSQL</div>
+      <div class="skill-item"><strong>Tools:</strong> Git, REST APIs, UML, ETL Pipelines</div>
+      <div class="skill-item"><strong>Certifications:</strong> AWS Cloud Practitioner, AWS Machine Learning Engineer, Microsoft 365 & Azure Fundamentals</div>
+      <div class="skill-item"><strong>Languages Spoken:</strong> English, French, Albanian, Spanish</div>
     </div>
   </div>
 </section>
 
 <style>
-  /* Skills section styling */
-  .skills-grid ul {
-    list-style-type: disc;
-    padding-left: 1.5em;
-    line-height: 1.8em;
-    font-size: 1em;
-    margin-top: 1em;
+  /* Stylish Skills Section */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.2em;
+    margin-top: 1.5em;
   }
 
-  .skills-grid li strong {
+  .skill-item {
+    background-color: #f8f8f8;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    font-size: 1em;
+  }
+
+  .skill-item strong {
+    display: block;
     color: #007acc;
+    margin-bottom: 0.3em;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 600px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
+
+
 
 
 
@@ -249,6 +265,7 @@
 	</body>
 
 </html>
+
 
 
 
