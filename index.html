@@ -175,48 +175,101 @@
 
 
 
-  <!-- About Me -->
-  <section id="about" class="three">
-    <div class="container">
-      <header>
-        <h2>About Me</h2>
-      </header>
-      <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-      <p>
-        I'm Anton Caushaj, a Computer Science student at York University and an Albanian-Canadian. Raised in Toronto, I’ve always been someone who blends curiosity with discipline, whether in tech, soccer, or life. My journey from Forest Hill to the Lassonde School of Engineering has been shaped by a love for learning, a respect for diversity, and a drive to improve every day. Inspired by my mother’s resilience, I believe success is built on heart, not just talent. I’m passionate about using technology to connect people, solve real-world problems, and leave a lasting impact.
-      </p>
+ <!-- Career -->
+<section id="career" class="three">
+  <div class="container">
+    <header>
+      <h2>Career: Education, Experience & Resume</h2>
+    </header>
+
+    <div class="career-education">
+      <h3>🎓 Education</h3>
+      <p><strong>BSc in Computer Science</strong><br />
+      York University – Lassonde School of Engineering<br />
+      <em>Expected Graduation: September 2026 | GPA: 3.6/4.0</em></p>
     </div>
-  </section>
 
-  <!-- Career -->
-  <section id="career" class="three">
-    <div class="container">
-      <header>
-        <h2>Career: Education, Experience & Resume</h2>
-      </header>
-      <p>
-        <strong>Education:</strong><br />
-        BSc in Computer Science, York University – Lassonde School of Engineering<br />
-        <em>Expected Graduation: September 2026 | GPA: 3.6/4.0</em><br /><br />
+    <div class="career-experience">
+      <h3>💼 Experience</h3>
 
-        <strong>Experience:</strong><br />
-        <em>Cloud Technical Analyst – Ontario Government</em><br />
-        Supported the modernization of public digital infrastructure by contributing to the design and optimization of cloud-based systems. Focused on accessibility, transparency, and ethical technology practices to improve public trust and service delivery.<br /><br />
+      <div class="experience-card">
+        <h4>Cloud Technical Analyst – Ontario Government</h4>
+        <p>Supported the modernization of public digital infrastructure by contributing to the design and optimization of cloud-based systems. Focused on accessibility, transparency, and ethical technology practices to improve public trust and service delivery.</p>
+      </div>
 
-        <em>Data Engineering Intern – Hudson’s Bay Company</em><br />
-        Built ETL pipelines, dashboards, and analytics tools to improve inventory and marketing strategies.<br /><br />
+      <div class="experience-card">
+        <h4>Data Engineering Intern – Hudson’s Bay Company</h4>
+        <p>Built ETL pipelines, dashboards, and analytics tools to improve inventory and marketing strategies.</p>
+      </div>
 
-        <em>Systems Analyst Intern – Raiffeisen Bank</em><br />
-        Automated workflows and analyzed customer data to improve system efficiency and predictive modeling.<br /><br />
+      <div class="experience-card">
+        <h4>Systems Analyst Intern – Raiffeisen Bank</h4>
+        <p>Automated workflows and analyzed customer data to improve system efficiency and predictive modeling.</p>
+      </div>
 
-        <em>Lifeguard & Guest Experience – Ink Entertainment</em><br />
-        Delivered safety and engagement at high-traffic events, enhancing guest satisfaction.<br /><br />
-
-        <strong>Resume:</strong><br />
-        <a href="files/AntonCaushajResume.pdf" target="_blank">Download My Resume (PDF)</a>
-      </p>
+      <div class="experience-card">
+        <h4>Lifeguard & Guest Experience – Ink Entertainment</h4>
+        <p>Delivered safety and engagement at high-traffic events, enhancing guest satisfaction.</p>
+      </div>
     </div>
-  </section>
+
+    <div class="career-resume">
+      <h3>📄 Resume</h3>
+      <p><a href="files/AntonCaushajResume.pdf" download target="_blank" class="resume-button">Download My Resume (PDF)</a></p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .career-education, .career-experience, .career-resume {
+    margin-bottom: 2em;
+  }
+
+  .career-education h3,
+  .career-experience h3,
+  .career-resume h3 {
+    color: #007acc;
+    margin-bottom: 0.5em;
+    font-size: 1.4em;
+  }
+
+  .experience-card {
+    background-color: #f8f8f8;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin-bottom: 1.2em;
+  }
+
+  .experience-card h4 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.2em;
+  }
+
+  .experience-card p {
+    margin-bottom: 0;
+    font-size: 0.95em;
+    color: #555;
+  }
+
+  .resume-button {
+    display: inline-block;
+    padding: 0.6em 1.2em;
+    background-color: #007acc;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+
+  .resume-button:hover {
+    background-color: #005f99;
+  }
+</style>
+
+
 
 <!-- Skills -->
 <section id="skills" class="three">
@@ -316,6 +369,7 @@
 	</body>
 
 </html>
+
 
 
 
