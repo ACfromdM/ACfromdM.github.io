@@ -64,65 +64,116 @@
     </div>
   </section>
 
-  <!-- Portfolio -->
-  <section id="portfolio" class="two">
-    <div class="container">
-      <header>
-        <h2>Portfolio</h2>
-      </header>
-      <p>My work focuses on building systems that are insightful, inclusive, and impactful. I specialize in cloud technologies, data analytics, and ethical computing.</p>
-      <div class="row">
-        <div class="col-4 col-12-mobile">
-          <article class="item">
-            <a href="https://github.com/ACfromdM/cloud-infrastructure" class="image fit"><img src="images/cloud_project.jpg" alt="" /></a>
-            <header>
-              <h3>Cloud Infrastructure for Public Services</h3>
-              <p>Internship with the Ontario Government focused on secure, accessible, and transparent systems.</p>
-            </header>
-          </article>
-          <article class="item">
-            <a href="https://github.com/ACfromdM/parking-system" class="image fit"><img src="images/parking_system.jpg" alt="" /></a>
-            <header>
-              <h3>Parking Management System</h3>
-              <p>Java-based full-stack app with license plate recognition and OOP design patterns.</p>
-            </header>
-          </article>
-        </div>
-        <div class="col-4 col-12-mobile">
-          <article class="item">
-            <a href="https://github.com/ACfromdM/churn-model" class="image fit"><img src="images/churn_model.jpg" alt="" /></a>
-            <header>
-              <h3>Customer Churn Prediction</h3>
-              <p>Machine learning model using Scikit-learn and Tableau dashboards for stakeholder insights.</p>
-            </header>
-          </article>
-          <article class="item">
-            <a href="https://github.com/ACfromdM/blockchain-voting" class="image fit"><img src="images/blockchain_vote.jpg" alt="" /></a>
-            <header>
-              <h3>Blockchain Voting System</h3>
-              <p>Secure decentralized voting using Solidity, Ethereum, and Web3J integration.</p>
-            </header>
-          </article>
-        </div>
-        <div class="col-4 col-12-mobile">
-          <article class="item">
-            <a href="#" class="image fit"><img src="images/data_dashboards.jpg" alt="" /></a>
-            <header>
-              <h3>E-commerce Analytics Dashboards</h3>
-              <p>ETL pipelines and Tableau dashboards for Hudson’s Bay e-commerce insights.</p>
-            </header>
-          </article>
-          <article class="item">
-            <a href="#" class="image fit"><img src="images/bank_analysis.jpg" alt="" /></a>
-            <header>
-              <h3>Banking System Optimization</h3>
-              <p>Workflow automation and customer behavior analysis at Raiffeisen Bank.</p>
-            </header>
-          </article>
-        </div>
+<!-- Portfolio -->
+<section id="portfolio" class="two">
+  <div class="container">
+    <header>
+      <h2>Portfolio</h2>
+    </header>
+    <p>My work focuses on building systems that are insightful, inclusive, and impactful. I specialize in cloud technologies, data analytics, and ethical computing.</p>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <a href="https://github.com/ACfromdM/cloud-infrastructure">
+          <img src="images/cloud_project.jpg" alt="Cloud Infrastructure" />
+          <div class="card-content">
+            <h3>Cloud Infrastructure for Public Services</h3>
+            <p>Internship with the Ontario Government focused on secure, accessible, and transparent systems.</p>
+          </div>
+        </a>
+      </div>
+      <div class="portfolio-card">
+        <a href="https://github.com/ACfromdM/parking-system">
+          <img src="images/parking_system.jpg" alt="Parking System" />
+          <div class="card-content">
+            <h3>Parking Management System</h3>
+            <p>Java-based full-stack app with license plate recognition and OOP design patterns.</p>
+          </div>
+        </a>
+      </div>
+      <div class="portfolio-card">
+        <a href="https://github.com/ACfromdM/churn-model">
+          <img src="images/churn_model.jpg" alt="Churn Prediction" />
+          <div class="card-content">
+            <h3>Customer Churn Prediction</h3>
+            <p>Machine learning model using Scikit-learn and Tableau dashboards for stakeholder insights.</p>
+          </div>
+        </a>
+      </div>
+      <div class="portfolio-card">
+        <a href="https://github.com/ACfromdM/blockchain-voting">
+          <img src="images/blockchain_vote.jpg" alt="Blockchain Voting" />
+          <div class="card-content">
+            <h3>Blockchain Voting System</h3>
+            <p>Secure decentralized voting using Solidity, Ethereum, and Web3J integration.</p>
+          </div>
+        </a>
+      </div>
+      <div class="portfolio-card">
+        <a href="#">
+          <img src="images/data_dashboards.jpg" alt="E-commerce Dashboards" />
+          <div class="card-content">
+            <h3>E-commerce Analytics Dashboards</h3>
+            <p>ETL pipelines and Tableau dashboards for Hudson’s Bay e-commerce insights.</p>
+          </div>
+        </a>
+      </div>
+      <div class="portfolio-card">
+        <a href="#">
+          <img src="images/bank_analysis.jpg" alt="Banking Optimization" />
+          <div class="card-content">
+            <h3>Banking System Optimization</h3>
+            <p>Workflow automation and customer behavior analysis at Raiffeisen Bank.</p>
+          </div>
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<style>
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+  }
+
+  .portfolio-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+
+  .portfolio-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .portfolio-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card-content {
+    padding: 1em;
+  }
+
+  .card-content h3 {
+    margin-top: 0;
+    color: #007acc;
+    font-size: 1.2em;
+  }
+
+  .card-content p {
+    margin-bottom: 0;
+    font-size: 0.95em;
+    color: #333;
+  }
+</style>
+
+
 
   <!-- About Me -->
   <section id="about" class="three">
@@ -265,6 +316,7 @@
 	</body>
 
 </html>
+
 
 
 
