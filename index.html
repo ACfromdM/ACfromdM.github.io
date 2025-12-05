@@ -181,8 +181,11 @@
       <h2>About Me</h2>
     </header>
     <div class="about-wrapper">
-      <div class="about-image">
-        <img src="images/pic08.jpg" alt="Anton Caushaj portrait" />
+      <div class="about-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/ddOiePoWnLI"
+          title="Anton Caushaj – About Me Video" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
       <div class="about-text">
         <p>
@@ -204,19 +207,16 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 2em;
   }
 
-  .about-image {
-    flex: 1 1 300px;
-    max-width: 400px;
-  }
-
-  .about-image img {
-    width: 100%;
+  .about-video {
+    flex: 1 1 400px;
+    max-width: 500px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
 
   .about-text {
@@ -234,8 +234,14 @@
     .about-wrapper {
       flex-direction: column;
     }
+
+    .about-video iframe {
+      height: 250px;
+    }
   }
 </style>
+
+
 
 
 
@@ -433,6 +439,7 @@
 	</body>
 
 </html>
+
 
 
 
