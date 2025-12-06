@@ -395,7 +395,9 @@
         <input type="email" name="email" placeholder="Email" required />
       </div>
       <textarea name="message" placeholder="Message" rows="6" required></textarea>
-      <button type="submit" class="button">Send Message</button>
+      <div class="button-wrapper">
+        <button type="submit" class="button">Send Message</button>
+      </div>
     </form>
   </div>
 </section>
@@ -452,8 +454,13 @@
     box-sizing: border-box;
   }
 
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+  }
+
   .button {
-    align-self: flex-start;
     background-color: #007acc;
     color: white;
     padding: 0.75em 1.5em;
@@ -476,12 +483,14 @@
   }
 </style>
 
+
+
  
 
 <!-- Footer -->
 <div id="footer">
   <ul class="copyright">
-    <li>&copy; Anton Caushaj. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>&copy; Anton Caushaj. All rights reserved.</li>
   </ul>
 </div>
 
@@ -498,6 +507,7 @@
 	</body>
 
 </html>
+
 
 
 
