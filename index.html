@@ -380,33 +380,99 @@
   }
 </style>
 
+<!-- Contact -->
+<section id="contact" class="four">
+  <div class="container">
+    <header>
+      <h2>Contact</h2>
+    </header>
+    <p>Let’s connect! Whether it’s about tech, collaboration, or just a good soccer match, drop me a message.</p>
 
-
-
-
-  <!-- Contact -->
-  <section id="contact" class="four">
-    <div class="container">
-      <header>
-        <h2>Contact</h2>
-      </header>
-      <p>Let’s connect! Whether it’s about tech, collaboration, or just a good soccer match, drop me a message.</p>
-      <form method="post" action="#">
-        <div class="row">
-          <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-          <div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-          <div class="col-12">
-            <textarea name="message" placeholder="Message"></textarea>
-          </div>
-          <div class="col-12">
-            <input type="submit" value="Send Message" />
-          </div>
+    <form action="https://formspree.io/f/xeoyzvzz" method="POST">
+      <div class="row">
+        <div class="col-6 col-12-mobile">
+          <input type="text" name="name" placeholder="Name" required />
         </div>
-      </form>
-    </div>
-  </section>
+        <div class="col-6 col-12-mobile">
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="col-12">
+          <textarea name="message" placeholder="Message" rows="6" required></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="button">Send Message</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
 
-</div>
+<style>
+  #contact {
+    padding: 4em 0;
+    background-color: #f9f9f9;
+  }
+
+  #contact header h2 {
+    font-size: 2em;
+    color: #007acc;
+    margin-bottom: 0.5em;
+  }
+
+  #contact p {
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 2em;
+  }
+
+  #contact form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+
+  #contact textarea {
+    resize: vertical;
+  }
+
+  #contact .button {
+    background-color: #007acc;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #contact .button:hover {
+    background-color: #005f99;
+  }
+
+  @media screen and (max-width: 768px) {
+    #contact .row {
+      flex-direction: column;
+    }
+  }
+</style>
+
+
+
+ 
 
 <!-- Footer -->
 <div id="footer">
@@ -428,6 +494,7 @@
 	</body>
 
 </html>
+
 
 
 
